@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nomis nails art</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>welcome to nomis nail and beauty</h1>
+    <p>This is my first web page made.</p>
+    <button onclick="sayHello()">Click Me</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NOmi`s beauty and nail art — Elegant Salon Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Elegant, responsive one-page website template for a beauty salon, makeup artist or skincare business. Replace text, images and styles to match your brand." />
+  <style>
+    /* Simple, elegant styles for a beauty business. Change the --accent variable to update primary color */
+    :root{ --bg: #ffffff; --muted: #777; --accent: #c77bff; --dark: #111; --card:#fff; }
+    *{box-sizing:border-box}body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial; margin:0; color:var(--dark); background:linear-gradient(180deg,#fff 0%, #fff 60%);}
+    header{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;border-bottom:1px solid rgba(0,0,0,0.04);position:sticky;top:0;background:rgba(255,255,255,0.85);backdrop-filter:blur(6px);z-index:40}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#ff9ecb);display:flex;align-items:center;justify-content:center;color:white;font-family:'Playfair Display';font-weight:700}
+    nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:center;padding:56px 28px;max-width:1100px;margin:0 auto}
+    .eyebrow{color:var(--accent);font-weight:700;margin-bottom:12px}
+    h1{font-family:'Playfair Display';font-size:44px;margin:0 0 12px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .cta{display:flex;gap:12px}
+    .btn{padding:12px 18px;border-radius:12px;border:0;font-weight:700;cursor:pointer}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{background:transparent;border:1px solid rgba(0,0,0,0.06)}
+    .card{background:var(--card);border-radius:16px;padding:18px;box-shadow:0 6px 20px rgba(18,18,18,0.06)}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:36px 28px;max-width:1100px;margin:0 auto}
+    .service h3{margin:8px 0 6px;font-size:18px}
+    .gallery{display:flex;gap:12px;padding:0 28px 36px;max-width:1100px;margin:0 auto}
+    .gallery img{width:100%;height:260px;object-fit:cover;border-radius:12px}
+    .contact{background:linear-gradient(180deg,rgba(199,123,255,0.07),transparent);padding:36px 28px;border-radius:20px;margin:24px 28px}
+    .footer{padding:24px 28px;color:var(--muted);font-size:14px}
+    @media(max-width:920px){.hero{grid-template-columns:1fr;gap:18px;padding:40px 18px}.services{grid-template-columns:repeat(2,1fr)}.gallery{flex-direction:column}.brand .logo{width:44px;height:44px}}
+    @media(max-width:520px){.services{grid-template-columns:1fr}}
+    /* small utilities */
+    .muted{color:var(--muted)}
+    form .row{display:flex;gap:12px}
+    form input, form textarea{width:100%;padding:10px;border-radius:10px;border:1px solid rgba(0,0,0,0.08)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">BS</div>
+      <div>
+        <div style="font-weight:700">Beauty Studio</div>
+        <div style="font-size:12px;color:var(--muted)">Nairobi • Beauty & Skincare</div>
+      </div>
+    </div>
+    <nav class="muted">
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Book your pamper</div>
+        <h1>Glow with Nomis nails and — Professional beauty services</h1>
+        <p class="lead">We create looks that make you feel confident. From tailored facials and luxurious massages to bridal makeup and nails — book your slot with our expert team.</p>
+        <div class="cta">
+          <button class="btn btn-primary" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Book Appointment</button>
+          <button class="btn btn-ghost" onclick="window.location='#gallery'">View Gallery</button>
+        </div>
+        <div style="margin-top:20px;display:flex;gap:12px">
+          <div class="card" style="display:flex;gap:12px;align-items:center">
+            <div style="font-weight:700">4.9 ★</div>
+            <div class="muted" style="font-size:14px">(320+ reviews)</div>
+          </div>
+          <div class="card muted" style="padding:12px;border-radius:12px">Open Tue–Sun · 9am–6pm</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Beauty" style="width:100%;height:320px;object-fit:cover;border-radius:12px;margin-bottom:12px">
+          <div style="display:flex;gap:12px;align-items:center">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=80&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" style="width:56px;height:56px;border-radius:10px;object-fit:cover">
+            <div>
+              <div style="font-weight:700">Samantha Mwangi</div>
+              <div class="muted" style="font-size:13px">Lead Makeup Artist</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="service card">
+        <h3>Facials &amp; Skincare</h3>
+        <div class="muted">Custom facials, microdermabrasion, LED therapy.</div>
+        <div style="margin-top:8px;font-weight:700">From KSh 2,000</div>
+      </div>
+
+      <div class="service card">
+        <h3>Makeup &amp; Bridal</h3>
+        <div class="muted">Every look tailored — bridal, editorial, event makeup.</div>
+        <div style="margin-top:8px;font-weight:700">From KSh 3,500</div>
+      </div>
+
+      <div class="service card">
+        <h3>Nails &amp; Waxing</h3>
+        <div class="muted">Manicure, pedicure, waxing and polishing.</div>
+        <div style="margin-top:8px;font-weight:700">From KSh 800</div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery" style="max-width:1100px">
+      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Gallery 1">
+      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Gallery 2">
+      <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Gallery 3">
+    </section>
+
+    <section id="contact" class="contact">
+      <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 420px;gap:18px;align-items:start">
+        <div>
+          <h2 style="margin-top:0;font-family:'Playfair Display'">Get in touch</h2>
+          <p class="muted">Questions, bookings or product inquiries — send us a message and we'll reply within 24 hours.</p>
+
+          <div class="card" style="margin-top:16px">
+            <div style="font-weight:700">Visit</div>
+            <div class="muted">Ruaraka, Naivas, Nairobi</div>
+            <div style="height:12px"></div>
+            <div style="font-weight:700">Call/Text</div>
+            <div class="muted">+254 741882160</div>
+          </div>
+        </div>
+
+        <div class="card" id="contact-form">
+          <form onsubmit="handleSubmit(event)">
+            <div style="margin-bottom:8px"><input id="name" placeholder="Your name" required></div>
+            <div style="margin-bottom:8px"><input id="email" type="email" placeholder="Email address" required></div>
+            <div style="margin-bottom:8px"><input id="service" placeholder="Service you're interested in"required></div>
+            <div style="margin-bottom:8px"><textarea id="message" rows="4" placeholder="Message or preferred date"required></textarea></div>
+            <div style="display:flex;gap:8px;justify-content:flex-end"><button class="btn btn-primary" type="submit">Send Message</button></div>
+            <div id="form-status" style="margin-top:8px;color:var(--muted);font-size:13px"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center">
+        <div>© <span id="year"></span> Nomis beauty — All rights reserved.</div>
+        <div class="muted">Designed with ❤️ by Eng.Michael</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date(octomber).getFullYear(2025);
+    function handleSubmit(e){
+      e.preventDefault();
+      const status = document.getElementById('form-status');
+      status.textContent = 'Sending... (this demo form does not actually send)';
+      setTimeout(()=>{ status.textContent = 'Thanks — we received your message!'; },900);
+    }
+  </script>
+
+  <!-- HOW TO USE
+    1) Replace "Beauty Studio" and the logo letters 'BS' with your business name and logo.
+    2) Change service details and prices in the Services section.
+    3) Replace Unsplash image URLs with your own photos or hosted images.
+    4) To enable real contact submissions, hook the form to an email service (Formspree, Netlify Forms) or your backend.
+    5) To change the accent color, edit --accent in the :root CSS.
+  -->
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Live Map Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+      #map {
+        height: 450px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Our Location</h2>
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+      // Initialize map
+      var map = L.map('map').setView([-1.286389, 36.817223], 13); // Nairobi coords
+
+      // Add map tiles
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap'
+      }).addTo(map);
+
+      // Add marker
+      L.marker([-1.286389, 36.817223])
+        .addTo(map)
+        .bindPopup('<b>Nomis nail art</b><br>Nairobi, Kenya')
+        .openPopup();
+    </script>
+  </body>
+</html>
+navigator.geolocation.watchPosition((position) => {
+  const coords = {
+    lat: position.coords.latitude,
+    lng: position.coords.longitude,
+  };
+  // Send coords to Firebase
+});
+Customer's browser  →  sends GPS to Firebase  →  your map page reads Firebase  →  live tracking
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Gallery</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      width: 90%;
+      max-width: 900px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    /* Optional: fade-in animation */
+<section class="video-gallery">
+  <h2>💇‍♀️ Our Beauty Work in Action</h2>
+
+  <div class="video-container">
+    <video controls autoplay muted loop>
+      <source src="videos/hair-styling.mp4" type="video/mp4">
+      Your browser does not support video playback.
+    </video>
+
+    <video controls poster="images/nail-thumbnail.jpg">
+      <source src="videos/manicure.mp4" type="video/mp4">
+      Your browser does not support video playback.
+    </video>
+
+    <iframe 
+      src="https://www.youtube.com/embed/your_video_id_here"
+      title="Salon Makeover"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+git init
+
+
+git add .
