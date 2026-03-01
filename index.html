@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1>welcome to nomis nail and beauty</h1>
-    <p>This is my first web page made.</p>
+    <p>This is Eng.Kalonzo.</p>
     <button onclick="sayHello()">Click Me</button>
 
     <script src="script.js"></script>
@@ -175,71 +175,9 @@
   </script>
 
 
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Live Map Example</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <style>
-      #map {
-        height: 450px;
-        width: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <h2>Our Location</h2>
-    <div id="map"></div>
 
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script>
-      // Initialize map
-      var map = L.map('map').setView([-1.286389, 36.817223], 13); // Nairobi coords
 
-      // Add map tiles
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-     
-      }).addTo(map);
 
-      // Add marker
-      L.marker([-1.286389, 36.817223])
-        .addTo(map)
-        .bindPopup('<b>Nomis nail art</b><br>Nairobi, Kenya')
-        .openPopup();
-    </script>
-  </body>
-</html>
-navigator.geolocation.watchPosition((position) => {
-  const coords = {
-    lat: position.coords.latitude,
-    lng: position.coords.longitude,
-  };
-  // Send coords to Firebase
-});
-Customer's browser  →  sends GPS to Firebase  →  your map page reads Firebase  →  live tracking
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animated Gallery</title>
-
-  <style>
-    body {
-      font-family: sans-serif;
-      background: #f7f7f7;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-     
-    }
 
 
 
