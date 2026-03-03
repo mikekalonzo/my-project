@@ -6,6 +6,7 @@ body {
 
 h1 {
   color: #2c3e50;
+  font-size: 3rem;
 }
 
 button {
@@ -31,6 +32,8 @@ button:hover {
   color: #ff1493;
   margin-bottom: 20px;
   animation: fadeIn 2s ease;
+  max-width: 100%;
+  height: auto;
 }
 
 .video-container {
@@ -38,6 +41,11 @@ button:hover {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+}
+.container {
+  width: 100%
+    max-width: 1200px;
+  margin: auto;
 }
 
 video, iframe {
@@ -93,3 +101,4 @@ video, iframe {
     form .row{display:flex;gap:12px}
     form input, form textarea{width:100%;padding:10px;border-radius:10px;border:1px solid rgba(0,0,0,0.08)}
   </style>
+
