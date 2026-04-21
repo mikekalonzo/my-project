@@ -1,4 +1,4 @@
-# my-project
+# My-project
 
 A responsive tribute page built with HTML and CSS as part of the freeCodeCamp Responsive Web Design certificate.
 
@@ -26,3 +26,4 @@ A responsive tribute page built with HTML and CSS as part of the freeCodeCamp Re
 - How to deploy projects using GitHub Pages
 - How to test projects on mobile and desktop
 
+*Consistency builds skill. Skill builds opportunity.*
